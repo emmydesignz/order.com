@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order now</title>
+</head>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}    
+
+body{
+   background-color: rgba(196, 214, 251, 0.843);
+}
+
+.forms form{
+    border: 3px solid white;
+    width: 400px;
+    height: auto;
+    margin-left: 32%;
+    margin-top: 4px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 4px;
+    background-color: rgb(44, 44, 85);
+}
+
+.form2 form{
+    width: 399px;
+    height: 50px;
+    background-color: rgb(69, 67, 67);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+    margin-left: 385px;
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+
+input{
+    height: 30px;
+    border: none;
+    padding: 4px;
+}
+
+label{
+    color: white;
+}
+
+h4{
+    text-align: center;
+    color: white;
+}
+
+h6 a{
+    color: white;
+}
+
+.submit{
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    margin-left: 90px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.submit:hover{
+    transform: scale(1.2);
+    transition: .5s all ease-in-out;
+    background-color: white;
+    height: 30px;
+    color: blue;
+}
+</style>
+
+<body>
+
+                
+        <div class="form2">
+            <form action="">
+                <h2>MAKE YOUR ORDER</h2>
+            </form>
+        </div>
+
+
+    <div class="forms">
+        <form action="">        
+                    
+                    <label for="name">Name</label>
+                    <input type="text" id="Name" placeholder="Enter full name" required>
+                    
+                    <label for="Address">Address</label>
+                    <input type="text" id="Address" placeholder="Enter your address" required>
+                    
+                    <label for="Mobile">Mobile Number</label>
+                    <input type="tel" id="Mobile" placeholder="Enter phone Number" required>
+                    
+                    <label for="name">Choose your desired apparel</label>
+                    <select name="option" id="select">
+                        <option value="select">Sweaters</option>
+                        <option value="select">T-shirts</option>
+                        <option value="select">Unisex trousers and shirsts</option>
+                        <option value="select">Necklaces and beads</option>
+                        <option value="select">Unisex Shoes</option>
+                        <option value="select">Sneakers</option>
+                        <option value="select">-Other-</option>
+
+                    </select>
+                    <label for="-Other-">-Other-</label>
+                    <input type="text" id="-Other-" placeholder="Enter your desired order">
+                    
+                    <label for="Size">Size</label>
+                    <input type="number" id="Size" placeholder="Select size" required>
+                    
+                    <label for="Choose order of payment">Choose order of payment</label>
+                    
+                    <label for="Pay online">Pay online <input type="radio" name="option"> </label>
+                    
+                    <label for="Cash on delivery">Cash on delivery <input type="radio" name="option"></label>
+                    
+                    <label for="Via bank transfer">Via bank transfer <input type="radio" name="option"> </label>
+                    
+                    
+                    <a href="index2.html"><input type="submit" class="submit"></a>
+        </form>
+    </div>
+</body>
+</html>
